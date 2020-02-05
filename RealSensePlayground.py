@@ -23,7 +23,7 @@ if isStreamColorImg:
     cfg.enable_stream(rs.stream.color, 640, 480, rs.format.rgb8, 30)
 if isStreamInfraredImg:
     cfg.enable_stream(rs.stream.infrared, 640, 480, rs.format.y8, 30)
-#cfg.enable_stream(rs.stream.any)
+#cfg.enable_stream(rs.stream.any) 
 
 # TODO: figure out how to get the vision output -
 #  cfg.enable_stream(rs.stream, 640, 480, rs.format.rgb8, 30)
