@@ -17,13 +17,15 @@ isStreamColorImg = True
 isStreamInfraredImg = True
 
 cfg = rs.config()
-if isStreamDepthImg:
-    cfg.enable_stream(rs.stream.depth, 640, 480, rs.format.z16, 30)
-if isStreamColorImg:
-    cfg.enable_stream(rs.stream.color, 640, 480, rs.format.rgb8, 30)
-if isStreamInfraredImg:
-    cfg.enable_stream(rs.stream.infrared, 640, 480, rs.format.y8, 30)
-#cfg.enable_stream(rs.stream.any) 
+if isStreamDepthImg and isStreamColorImg and isStreamInfraredImg:
+    cfg.enable_stream(rs.stream.any)
+else:
+    if isStreamDepthImg:
+        cfg.enable_stream(rs.stream.depth, 640, 480, rs.format.z16, 30)
+    if isStreamColorImg:
+        cfg.enable_stream(rs.stream.color, 640, 480, rs.format.rgb8, 30)
+    if isStreamInfraredImg:
+        cfg.enable_stream(rs.stream.infrared, 640, 480, rs.format.y8, 30)
 
 # TODO: figure out how to get the vision output -
 #  cfg.enable_stream(rs.stream, 640, 480, rs.format.rgb8, 30)
@@ -123,9 +125,6 @@ if False:
     depth = frames.get_depth_frame()
     depth_data = depth.as_frame().get_data()
 
-
-
-
 # try:
 #   for i in range(0, 100):
 #     frames = pipe.wait_for_frames()
@@ -134,11 +133,7 @@ if False:
 # finally:
 #     pipe.stop()
 
-
-
 rs.device_list
-
-
 sensorsList = rsContext.query_all_sensors
 
 

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a88c0095-ca21-4d8c-8bf9-16a1249c22b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FeatureExtraction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StremRealSenseFromFS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/InnovationCenter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/InnovationCenter.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RealSensePlayground.py" beforeDir="false" afterPath="$PROJECT_DIR$/RealSensePlayground.py" afterDir="false" />
     </list>
@@ -10,6 +12,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,14 +37,16 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/RealSensePlayground.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/StremRealSenseFromFS.py" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.StremRealSenseFromFS">
     <configuration name="RealSensePlayground" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="InnovationCenter" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -49,6 +60,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RealSensePlayground.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="StremRealSenseFromFS" type="PythonConfigurationType" factoryName="Python">
+      <module name="InnovationCenter" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/StremRealSenseFromFS.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -78,6 +110,10 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.RealSensePlayground" />
+      <item itemvalue="Python.StremRealSenseFromFS" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -97,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580906948958</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Playing with the real sense camera">
+      <created>1580910595687</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580910595687</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -109,45 +152,109 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="125" y="214" width="800" height="677" key="#Notifications/67.27.1853.1053@67.27.1853.1053" timestamp="1580907013933" />
-    <state x="451" y="210" width="1084" height="718" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580907157427">
+    <state x="679" y="155" width="619" height="795" key="#RealSensePlayground" timestamp="1581264168751">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="451" y="210" width="1084" height="718" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1580907157427" />
-    <state x="132" y="152" width="777" height="803" key="CommitChangelistDialog2" timestamp="1580906948846">
+    <state x="679" y="155" width="619" height="795" key="#RealSensePlayground/67.27.1853.1053@67.27.1853.1053" timestamp="1581264168751" />
+    <state x="451" y="210" width="1084" height="718" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581265002290">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="132" y="152" width="777" height="803" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1580906948846" />
-    <state x="776" y="326" width="424" height="484" key="FileChooserDialogImpl" timestamp="1580907090590">
+    <state x="451" y="210" width="1084" height="718" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1581265002290" />
+    <state x="132" y="152" width="777" height="803" key="CommitChangelistDialog2" timestamp="1580910595593">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="776" y="326" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1580907090590" />
-    <state width="1830" height="278" key="GridCell.Tab.0.bottom" timestamp="1580907601112">
+    <state x="132" y="152" width="777" height="803" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1580910595593" />
+    <state width="1535" height="568" key="DebuggerActiveHint" timestamp="1581414583342">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1830" height="278" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1580907601112" />
-    <state width="1830" height="278" key="GridCell.Tab.0.center" timestamp="1580907601112">
+    <state width="1535" height="568" key="DebuggerActiveHint/67.27.1853.1053@67.27.1853.1053" timestamp="1581414583342" />
+    <state x="1183" y="384" width="424" height="484" key="FileChooserDialogImpl" timestamp="1581265925233">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1830" height="278" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1580907601112" />
-    <state width="1830" height="278" key="GridCell.Tab.0.left" timestamp="1580907601112">
+    <state x="1183" y="384" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1581265925233" />
+    <state width="1807" height="344" key="GridCell.Tab.0.bottom" timestamp="1581423231639">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1830" height="278" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1580907601112" />
-    <state width="1830" height="278" key="GridCell.Tab.0.right" timestamp="1580907601112">
+    <state width="1807" height="344" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1581423231639" />
+    <state width="1807" height="344" key="GridCell.Tab.0.center" timestamp="1581423231639">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1830" height="278" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1580907601112" />
-    <state x="125" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1580907023780">
+    <state width="1807" height="344" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1581423231639" />
+    <state width="1807" height="344" key="GridCell.Tab.0.left" timestamp="1581423231638">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="125" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1580907023780" />
-    <state x="1112" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1580910082467">
+    <state width="1807" height="344" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1581423231638" />
+    <state width="1807" height="344" key="GridCell.Tab.0.right" timestamp="1581423231639">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="1112" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1580910082467" />
+    <state width="1807" height="344" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1581423231639" />
+    <state width="1807" height="344" key="GridCell.Tab.1.bottom" timestamp="1581422370104">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="344" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1581422370104" />
+    <state width="1807" height="344" key="GridCell.Tab.1.center" timestamp="1581422370104">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="344" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1581422370104" />
+    <state width="1807" height="344" key="GridCell.Tab.1.left" timestamp="1581422370104">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="344" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1581422370104" />
+    <state width="1807" height="344" key="GridCell.Tab.1.right" timestamp="1581422370104">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="344" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1581422370104" />
+    <state x="67" y="121" key="SettingsEditor" timestamp="1581431731120">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="67" y="121" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1581431731120" />
+    <state x="125" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1580910622912">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="125" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1580910622912" />
+    <state x="1112" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1580978029101">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="1112" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1580978029101" />
+    <state x="647" y="149" width="683" height="806" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1581421762815">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="647" y="149" width="683" height="806" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1581421762815" />
     <state x="298" y="472" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580906973625">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="298" y="472" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.1053@67.27.1853.1053" timestamp="1580906973625" />
+    <state x="887" y="52" width="863" height="963" key="find.popup" timestamp="1581427537845">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="887" y="52" width="863" height="963" key="find.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1581427537845" />
+    <state x="155" y="345" width="741" height="415" key="git4idea.merge.GitPullDialog" timestamp="1580910615619">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="155" y="345" width="741" height="415" key="git4idea.merge.GitPullDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1580910615619" />
+    <state x="738" y="196" width="501" height="713" key="refactoring.ChangeSignatureDialog" timestamp="1581422082032">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="738" y="196" width="501" height="713" key="refactoring.ChangeSignatureDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1581422082032" />
+    <state x="657" y="198" width="672" height="676" key="search.everywhere.popup" timestamp="1581422509990">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="657" y="198" width="672" height="676" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1581422509990" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/StremRealSenseFromFS.py</url>
+          <line>179</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/StremRealSenseFromFS.py</url>
+          <line>175</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
