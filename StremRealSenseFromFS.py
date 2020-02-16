@@ -123,9 +123,9 @@ def main():
     pipelineProfile = pipe.start()
 
     isStreamColorImg = True
-    isStreamInfraredImg = False
-    isStreamDepthImg = False
-    isStreamPointCloud = False
+    isStreamInfraredImg = True
+    isStreamDepthImg = True
+    isStreamPointCloud = True
 
     # Declare a point cloud object
     pc = rs.pointcloud()
@@ -179,9 +179,6 @@ def main():
 
                     depthFrameFiltered = ApplyFiltersOnDepthFrame(depthFrame)
                     PlotDepthFrame(depthFrame)
-
-
-
 
         # print(f.profile)
         device.resume()

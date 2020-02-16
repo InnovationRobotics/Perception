@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a88c0095-ca21-4d8c-8bf9-16a1249c22b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/FeatureExtraction.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StremRealSenseFromFS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/InnovationCenter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/InnovationCenter.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RealSensePlayground.py" beforeDir="false" afterPath="$PROJECT_DIR$/RealSensePlayground.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FeatureExtraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/FeatureExtraction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StremRealSenseFromFS.py" beforeDir="false" afterPath="$PROJECT_DIR$/StremRealSenseFromFS.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +35,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/StremRealSenseFromFS.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/FeatureExtraction.py" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -46,7 +44,28 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.StremRealSenseFromFS">
+  <component name="RunManager" selected="Python.FeatureExtraction">
+    <configuration name="FeatureExtraction" type="PythonConfigurationType" factoryName="Python">
+      <module name="InnovationCenter" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FeatureExtraction.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="RealSensePlayground" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="InnovationCenter" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -113,6 +132,7 @@
     <list>
       <item itemvalue="Python.RealSensePlayground" />
       <item itemvalue="Python.StremRealSenseFromFS" />
+      <item itemvalue="Python.FeatureExtraction" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -140,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580910595687</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Playing with the real sense camera">
+      <created>1581434448464</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581434448464</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -156,54 +183,54 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="679" y="155" width="619" height="795" key="#RealSensePlayground/67.27.1853.1053@67.27.1853.1053" timestamp="1581264168751" />
-    <state x="451" y="210" width="1084" height="718" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581265002290">
+    <state x="451" y="210" width="1084" height="718" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581833577245">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="451" y="210" width="1084" height="718" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1581265002290" />
-    <state x="132" y="152" width="777" height="803" key="CommitChangelistDialog2" timestamp="1580910595593">
+    <state x="451" y="210" width="1084" height="718" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1581833577245" />
+    <state x="132" y="152" width="777" height="803" key="CommitChangelistDialog2" timestamp="1581434448410">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="132" y="152" width="777" height="803" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1580910595593" />
+    <state x="132" y="152" width="777" height="803" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1581434448410" />
     <state width="1535" height="568" key="DebuggerActiveHint" timestamp="1581414583342">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1535" height="568" key="DebuggerActiveHint/67.27.1853.1053@67.27.1853.1053" timestamp="1581414583342" />
-    <state x="1183" y="384" width="424" height="484" key="FileChooserDialogImpl" timestamp="1581265925233">
+    <state x="1183" y="384" width="424" height="484" key="FileChooserDialogImpl" timestamp="1581833568645">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="1183" y="384" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1581265925233" />
-    <state width="1807" height="344" key="GridCell.Tab.0.bottom" timestamp="1581423231639">
+    <state x="1183" y="384" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1581833568645" />
+    <state width="1807" height="344" key="GridCell.Tab.0.bottom" timestamp="1581834210941">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="344" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1581423231639" />
-    <state width="1807" height="344" key="GridCell.Tab.0.center" timestamp="1581423231639">
+    <state width="1807" height="344" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1581834210941" />
+    <state width="1807" height="344" key="GridCell.Tab.0.center" timestamp="1581834210940">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="344" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1581423231639" />
-    <state width="1807" height="344" key="GridCell.Tab.0.left" timestamp="1581423231638">
+    <state width="1807" height="344" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1581834210940" />
+    <state width="1807" height="344" key="GridCell.Tab.0.left" timestamp="1581834210939">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="344" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1581423231638" />
-    <state width="1807" height="344" key="GridCell.Tab.0.right" timestamp="1581423231639">
+    <state width="1807" height="344" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1581834210939" />
+    <state width="1807" height="344" key="GridCell.Tab.0.right" timestamp="1581834210940">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="344" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1581423231639" />
-    <state width="1807" height="344" key="GridCell.Tab.1.bottom" timestamp="1581422370104">
+    <state width="1807" height="344" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1581834210940" />
+    <state width="1807" height="344" key="GridCell.Tab.1.bottom" timestamp="1581834111703">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="344" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1581422370104" />
-    <state width="1807" height="344" key="GridCell.Tab.1.center" timestamp="1581422370104">
+    <state width="1807" height="344" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1581834111703" />
+    <state width="1807" height="344" key="GridCell.Tab.1.center" timestamp="1581834111703">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="344" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1581422370104" />
-    <state width="1807" height="344" key="GridCell.Tab.1.left" timestamp="1581422370104">
+    <state width="1807" height="344" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1581834111703" />
+    <state width="1807" height="344" key="GridCell.Tab.1.left" timestamp="1581834111703">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="344" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1581422370104" />
-    <state width="1807" height="344" key="GridCell.Tab.1.right" timestamp="1581422370104">
+    <state width="1807" height="344" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1581834111703" />
+    <state width="1807" height="344" key="GridCell.Tab.1.right" timestamp="1581834111703">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="344" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1581422370104" />
+    <state width="1807" height="344" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1581834111703" />
     <state x="67" y="121" key="SettingsEditor" timestamp="1581431731120">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -253,6 +280,21 @@
           <url>file://$PROJECT_DIR$/StremRealSenseFromFS.py</url>
           <line>175</line>
           <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/FeatureExtraction.py</url>
+          <line>75</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/FeatureExtraction.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/FeatureExtraction.py</url>
+          <line>78</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
