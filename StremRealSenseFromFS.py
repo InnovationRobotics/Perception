@@ -83,7 +83,6 @@ def ApplyFiltersOnDepthFrame(depthFrame):
     # 4. apply temporal filter
     # 5. revert the results back (if step Disparity filter was applied
     # to depth domain (each post processing block is optional and can be applied independantly).
-
     revert_disparity = True;
 
     # Decimation - reduces depth frame density
@@ -107,9 +106,9 @@ def ApplyFiltersOnDepthFrame(depthFrame):
     # PlotDepthFrame(depthFrame)
     return filteredFrame
 
-def FramesToVideo(srcFolder):
+def FramesToVideo(srcFolder = '/home/sload/Desktop/ShaharSarShalom/VideoStreamSamples/20200209_163301/DebugPath/2020_02_17_08_35_12', fps = 10):
     # The function create a video file from all the frames in the source folder
-    srcFolder = '/home/sload/Desktop/ShaharSarShalom/VideoStreamSamples/20200209_163301/DebugPath/2020_02_17_08_35_12'
+    #srcFolder = '/home/sload/Desktop/ShaharSarShalom/VideoStreamSamples/20200209_163301/DebugPath/2020_02_17_08_35_12'
     # Frames per second
     fps = 10
 
