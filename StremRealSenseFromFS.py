@@ -65,6 +65,7 @@ def PlotPointCloud(pc, depthFrame, videoFrame):
     o3d.visualization.draw_geometries([pcd])
 
 def WriteVideoFrame(videoFrame, dstFolder, fileIndex):
+    # write a video frame input to the file system
     assert isinstance(videoFrame, rs.video_frame)
 
     videoFrameData = videoFrame.get_data()
@@ -106,6 +107,31 @@ def ApplyFiltersOnDepthFrame(depthFrame):
     # PlotDepthFrame(depthFrame)
     return filteredFrame
 
+def FramesToVideo(srcFolder):
+    # The function create a video file from all the frames in the source folder
+    srcFolder = '/home/sload/Desktop/ShaharSarShalom/VideoStreamSamples/20200209_163301/DebugPath/2020_02_17_08_35_12'
+    # Frames per second
+    fps = 10
+
+    videoWriter = None
+
+    ld = os.listdir(srcFolder)
+    ld.sort()
+    for filename in ld:
+        if filename.endswith(".bmp") or filename.endswith(".jpg"):
+            print(os.path.join(srcFolder, filename))
+            img = cv2.imread(os.path.join(srcFolder, filename))
+            # cv.imshow("", curImg)
+
+            if videoWriter is None:
+                height, width, layers = img.shape
+                fourcc = cv2.VideoWriter_fourcc('M', 'J', 'P', 'G')
+                videoWriter = cv2.VideoWriter(os.path.join(srcFolder, 'video.avi'), fourcc, fps, (width, height))
+
+            videoWriter.write(img)
+
+    if videoWriter is not None:
+        videoWriter.release()
 
 def main():
     rsContext = rs.context()
@@ -157,7 +183,7 @@ def main():
                 if videoFrame.is_frame() and CheckFrameValidity(videoFrame):
                     if False:
                         PlotVideoFrame(videoFrame)
-                    WriteVideoFrame(videoFrame = videoFrame, dstFolder = dstFolder, fileIndex= videoFrameCounter)
+                    # WriteVideoFrame(videoFrame = videoFrame, dstFolder = dstFolder, fileIndex= videoFrameCounter)
 
             if isStreamInfraredImg:
                 frame = frames.get_infrared_frame()

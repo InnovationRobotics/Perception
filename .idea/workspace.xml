@@ -167,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581434448464</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Playing with the real sense camera">
+      <created>1581853753643</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1581853753643</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -175,78 +182,78 @@
     <option name="LAST_COMMIT_MESSAGE" value="Playing with the real sense camera" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="125" y="214" width="800" height="677" key="#Notifications" timestamp="1580907013933">
+    <state x="125" y="214" width="800" height="677" key="#Notifications" timestamp="1581853991017">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="125" y="214" width="800" height="677" key="#Notifications/67.27.1853.1053@67.27.1853.1053" timestamp="1580907013933" />
+    <state x="125" y="214" width="800" height="677" key="#Notifications/67.27.1853.1053@67.27.1853.1053" timestamp="1581853991017" />
     <state x="679" y="155" width="619" height="795" key="#RealSensePlayground" timestamp="1581264168751">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="679" y="155" width="619" height="795" key="#RealSensePlayground/67.27.1853.1053@67.27.1853.1053" timestamp="1581264168751" />
-    <state x="451" y="210" width="1084" height="718" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581833577245">
+    <state x="451" y="210" width="1084" height="718" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581853879201">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="451" y="210" width="1084" height="718" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1581833577245" />
-    <state x="132" y="152" width="777" height="803" key="CommitChangelistDialog2" timestamp="1581434448410">
+    <state x="451" y="210" width="1084" height="718" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1581853879201" />
+    <state x="132" y="152" width="777" height="803" key="CommitChangelistDialog2" timestamp="1581853753592">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="132" y="152" width="777" height="803" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1581434448410" />
-    <state width="1535" height="568" key="DebuggerActiveHint" timestamp="1581414583342">
+    <state x="132" y="152" width="777" height="803" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1581853753592" />
+    <state width="1535" height="568" key="DebuggerActiveHint" timestamp="1581920347187">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1535" height="568" key="DebuggerActiveHint/67.27.1853.1053@67.27.1853.1053" timestamp="1581414583342" />
+    <state width="1535" height="568" key="DebuggerActiveHint/67.27.1853.1053@67.27.1853.1053" timestamp="1581920347187" />
     <state x="1183" y="384" width="424" height="484" key="FileChooserDialogImpl" timestamp="1581833568645">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1183" y="384" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1581833568645" />
-    <state width="1807" height="344" key="GridCell.Tab.0.bottom" timestamp="1581834210941">
+    <state width="903" height="351" key="GridCell.Tab.0.bottom" timestamp="1581931013640">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="344" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1581834210941" />
-    <state width="1807" height="344" key="GridCell.Tab.0.center" timestamp="1581834210940">
+    <state width="903" height="351" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1581931013640" />
+    <state width="903" height="351" key="GridCell.Tab.0.center" timestamp="1581931013638">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="344" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1581834210940" />
-    <state width="1807" height="344" key="GridCell.Tab.0.left" timestamp="1581834210939">
+    <state width="903" height="351" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1581931013638" />
+    <state width="903" height="351" key="GridCell.Tab.0.left" timestamp="1581931013637">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="344" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1581834210939" />
-    <state width="1807" height="344" key="GridCell.Tab.0.right" timestamp="1581834210940">
+    <state width="903" height="351" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1581931013637" />
+    <state width="903" height="351" key="GridCell.Tab.0.right" timestamp="1581931013639">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="344" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1581834210940" />
-    <state width="1807" height="344" key="GridCell.Tab.1.bottom" timestamp="1581834111703">
+    <state width="903" height="351" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1581931013639" />
+    <state width="903" height="351" key="GridCell.Tab.1.bottom" timestamp="1581930948254">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="344" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1581834111703" />
-    <state width="1807" height="344" key="GridCell.Tab.1.center" timestamp="1581834111703">
+    <state width="903" height="351" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1581930948254" />
+    <state width="903" height="351" key="GridCell.Tab.1.center" timestamp="1581930948253">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="344" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1581834111703" />
-    <state width="1807" height="344" key="GridCell.Tab.1.left" timestamp="1581834111703">
+    <state width="903" height="351" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1581930948253" />
+    <state width="903" height="351" key="GridCell.Tab.1.left" timestamp="1581930948253">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="344" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1581834111703" />
-    <state width="1807" height="344" key="GridCell.Tab.1.right" timestamp="1581834111703">
+    <state width="903" height="351" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1581930948253" />
+    <state width="903" height="351" key="GridCell.Tab.1.right" timestamp="1581930948254">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="344" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1581834111703" />
+    <state width="903" height="351" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1581930948254" />
     <state x="67" y="121" key="SettingsEditor" timestamp="1581431731120">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="67" y="121" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1581431731120" />
-    <state x="125" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1580910622912">
+    <state x="125" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1581853911898">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="125" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1580910622912" />
+    <state x="125" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1581853911898" />
     <state x="1112" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1580978029101">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1112" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1580978029101" />
-    <state x="647" y="149" width="683" height="806" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1581421762815">
+    <state x="647" y="149" width="683" height="806" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1581917139983">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="647" y="149" width="683" height="806" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1581421762815" />
+    <state x="647" y="149" width="683" height="806" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1581917139983" />
     <state x="298" y="472" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580906973625">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -259,10 +266,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="155" y="345" width="741" height="415" key="git4idea.merge.GitPullDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1580910615619" />
-    <state x="738" y="196" width="501" height="713" key="refactoring.ChangeSignatureDialog" timestamp="1581422082032">
+    <state x="738" y="196" width="501" height="713" key="refactoring.ChangeSignatureDialog" timestamp="1581919658729">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="738" y="196" width="501" height="713" key="refactoring.ChangeSignatureDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1581422082032" />
+    <state x="738" y="196" width="501" height="713" key="refactoring.ChangeSignatureDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1581919658729" />
     <state x="657" y="198" width="672" height="676" key="search.everywhere.popup" timestamp="1581422509990">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -273,28 +280,28 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/StremRealSenseFromFS.py</url>
-          <line>179</line>
+          <line>205</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/StremRealSenseFromFS.py</url>
-          <line>175</line>
+          <line>201</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/FeatureExtraction.py</url>
-          <line>75</line>
+          <line>164</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/FeatureExtraction.py</url>
-          <line>26</line>
-          <option name="timeStamp" value="28" />
+          <url>file://$PROJECT_DIR$/StremRealSenseFromFS.py</url>
+          <line>187</line>
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/FeatureExtraction.py</url>
-          <line>78</line>
-          <option name="timeStamp" value="29" />
+          <line>154</line>
+          <option name="timeStamp" value="58" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
