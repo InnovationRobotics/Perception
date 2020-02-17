@@ -7,9 +7,9 @@ from datetime import datetime
 from argparse import ArgumentParser
 
 
-class Local:
+class LocalEstimator:
     def __init__(self, debugFlag = False, debugPath = ''):
-        # Initiate detector
+
         # Original code comes from here: https://docs.opencv.org/master/dc/dc3/tutorial_py_matcher.html
         # detectorObj = cv2.xfeatures2d.SURF_create()
         self.detectorObj = cv.ORB_create()
@@ -34,7 +34,7 @@ class Local:
         if self.debugFlag:
             self.refImg = refImg
 
-    def CalculateLocal(self, curImg, debugPath, debugFileName):
+    def CalculateLocal(self, curImg):
         keypointsCur, descriptorsCur = self.detectorObj.detectAndCompute(curImg, None)
 
         # create BFMatcher object
@@ -111,7 +111,9 @@ class Local:
 
         return trans
 
+
 class LocalUnitTest:
+
     def Test1(self, config):
         # Test the ref to current matching frame to frame
 
@@ -124,19 +126,19 @@ class LocalUnitTest:
         curImg = cv.imread(curImagePath)
         # cv2.imshow("", curImg)
 
-        localDetector = Local(config.isDebug)
-        localDetector.LoadRef(refImg)
-        trans = localDetector.CalculateLocal(curImg=curImg)
+        localEstimator = LocalEstimator(config.isDebug)
+        localEstimator.LoadRef(refImg)
+        trans = localEstimator.CalculateLocal(curImg=curImg)
 
     def Test2(self, config):
         # Test the local matching module along time
-        localDetector = Local(config.isDebug, config.debugPath)
+        localEstimator = LocalEstimator(config.isDebug, config.debugPath)
 
         # Extact features from cropped image of the object
         refImagePath = '/home/sload/Desktop/ShaharSarShalom/Perception/VehicleTopView/VehcleTopView.bmp'
         refImg = cv.imread(refImagePath)
         # cv.imshow("", refImg)
-        localDetector.LoadRef(refImg=refImg)
+        localEstimator.LoadRef(refImg=refImg)
 
         srcDir = '/home/sload/Desktop/ShaharSarShalom/VideoStreamSamples/20200209_163301/VideoFrames/'
         ld = os.listdir(srcDir)
@@ -146,7 +148,7 @@ class LocalUnitTest:
                 print(os.path.join(srcDir, filename))
                 curImg = cv.imread(os.path.join(srcDir, filename))
                 # cv.imshow("", curImg)
-                trans = localDetector.CalculateLocal(curImg=curImg)
+                trans = localEstimator.CalculateLocal(curImg=curImg)
 
 
 def main():
@@ -157,7 +159,7 @@ def main():
     args = parser.parse_args()
 
     localUnitTest = LocalUnitTest()
-    #localUnitTest.Test1(config=args)
+    # localUnitTest.Test1(config=args)
     localUnitTest.Test2(config=args)
 
     print('Finished unit test')

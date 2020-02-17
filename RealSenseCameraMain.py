@@ -4,6 +4,7 @@ from pylab import *
 import open3d as o3d
 import pyrealsense2 as rs
 import os
+from argparse import ArgumentParser
 
 def CheckFrameValidity(frame):
     return frame.is_depth_frame() or frame.is_frame() or frame.is_frameset() or frame.is_motion_frame() or frame.is_points() or frame.is_pose_frame() or frame.is_video_frame()
@@ -74,38 +75,6 @@ def WriteVideoFrame(videoFrame, dstFolder, fileIndex):
 
     cv2.imwrite(os.path.join(dstFolder, 'Frame_' + '{num:06}'.format(num=fileIndex) + '.bmp'), np_imageRGB)
 
-def ApplyFiltersOnDepthFrame(depthFrame):
-    # Apply filters.
-    # The implemented flow of the filters pipeline is in the following order:
-    # 1. apply decimation filter
-    # 2. transform the scence into disparity domain
-    # 3. apply spatial filter
-    # 4. apply temporal filter
-    # 5. revert the results back (if step Disparity filter was applied
-    # to depth domain (each post processing block is optional and can be applied independantly).
-    revert_disparity = True;
-
-    # Decimation - reduces depth frame density
-    decimateFilter = rs.decimation_filter()
-    # Converts from depth representation to disparity representation and vice - versa in depth frames
-    depth_to_disparity = rs.disparity_transform(True)
-    # Spatial    - edge-preserving spatial smoothing
-    spatial_filter = rs.spatial_filter()
-    # Temporal   - reduces temporal noise
-    temporalFilter = rs.temporal_filter()
-    disparity_to_depth = rs.disparity_transform(False)
-
-    # Apply all filters
-    filteredFrame = decimateFilter.process(depthFrame)
-    filteredFrame = depth_to_disparity.process(filteredFrame)
-    filteredFrame = spatial_filter.process(filteredFrame)
-    filteredFrame = temporalFilter.process(filteredFrame)
-    filteredFrame = disparity_to_depth.process(filteredFrame)
-
-    # PlotDepthFrame(filteredFrame)
-    # PlotDepthFrame(depthFrame)
-    return filteredFrame
-
 def FramesToVideo(srcFolder = '/home/sload/Desktop/ShaharSarShalom/VideoStreamSamples/20200209_163301/DebugPath/2020_02_17_08_35_12', fps = 10):
     # The function create a video file from all the frames in the source folder
     #srcFolder = '/home/sload/Desktop/ShaharSarShalom/VideoStreamSamples/20200209_163301/DebugPath/2020_02_17_08_35_12'
@@ -132,13 +101,75 @@ def FramesToVideo(srcFolder = '/home/sload/Desktop/ShaharSarShalom/VideoStreamSa
     if videoWriter is not None:
         videoWriter.release()
 
+
+class DepthPostProcessing:
+    # The class is used for applying a set of processing filters on top of the depth frame
+    # TODO: determine whether or not to apply each one of the filters from config params -
+    # TODO: save the processes depth frame on debug mode
+    # TODO: support revert disparity if applied cetrain filters --> look at the custom filter example at the sdk samples
+
+    def __init__(self, debugFlag=False, debugPath=''):
+        self.debugFlag = debugFlag
+
+        # Decimation - reduces depth frame density
+        self.decimateFilter = rs.decimation_filter()
+
+        self.thresholdFilter = rs.threshold_filter(min_dist = 1.8, max_dist = 3)
+
+        # Converts from depth representation to disparity representation and vice - versa in depth frames
+        self.depth_to_disparity = rs.disparity_transform(True)
+        # Spatial    - edge-preserving spatial smoothing
+        self.spatial_filter = rs.spatial_filter()
+        # Temporal   - reduces temporal noise
+        self.temporalFilter = rs.temporal_filter()
+        self.disparity_to_depth = rs.disparity_transform(False)
+
+    def ApplyPostFiltering(self, depthFrame):
+        assert isinstance(depthFrame, rs.depth_frame) or isinstance(depthFrame, rs.frame)
+
+        # Apply filters.
+        # The implemented flow of the filters pipeline is in the following order:
+        # 1. apply decimation filter
+        # 2. transform the scence into disparity domain
+        # 3. apply spatial filter
+        # 4. apply temporal filter
+        # 5. revert the results back (if step Disparity filter was applied
+        # to depth domain (each post processing block is optional and can be applied independantly).
+
+        revert_disparity = True;
+
+        processedDepthFrame = self.decimateFilter.process(depthFrame)
+        processedDepthFrame = self.thresholdFilter.process(processedDepthFrame)
+        processedDepthFrame = self.depth_to_disparity.process(processedDepthFrame)
+        processedDepthFrame = self.spatial_filter.process(processedDepthFrame)
+        processedDepthFrame = self.temporalFilter.process(processedDepthFrame)
+        processedDepthFrame = self.disparity_to_depth.process(processedDepthFrame)
+
+        # PlotDepthFrame(filteredFrame)
+        # PlotDepthFrame(depthFrame)
+        return processedDepthFrame
+
+
 def main():
     rsContext = rs.context()
 
-    folderPath = '/home/sload/Desktop/ShaharSarShalom/VideoStreamSamples/'
+    # folderPath = '/home/sload/Desktop/ShaharSarShalom/VideoStreamSamples/'
     #recordedFile = os.path.join(folderPath, '20200209_163025.bag')
-    recordedFile = os.path.join(folderPath, '20200209_163301.bag')
+    #recordedFile = os.path.join(folderPath, '20200209_163301.bag')
+
+    recordedFile = os.path.join('/home/sload/Desktop/ShaharSarShalom/forSS/recs_160220_wallAt255cmFromCamera', '20200216_174116_secondRec.bag')
     dstFolder = '/home/sload/Desktop/ShaharSarShalom/VideoStreamSamples/20200209_163301/VideoFrames'
+
+    parser = ArgumentParser(add_help=False)
+    args = parser.add_argument_group('Options')
+    args.add_argument('-isDebug', '--isDebug', default=True, help='')
+    args.add_argument('-debugPath', '--debugPath', default='/home/sload/Desktop/ShaharSarShalom/VideoStreamSamples/20200209_163301/DebugPath', help='')
+    args.add_argument('-isStreamColorImg', '--isStreamColorImg',default=True,help='')
+    args.add_argument('-isStreamInfraredImg', '--isStreamInfraredImg', default=True, help='')
+    args.add_argument('-isStreamDepthImg', '--isStreamDepthImg', default=True, help='')
+
+    args = parser.parse_args()
+    config = args
 
     device = rsContext.load_device(recordedFile)
 
@@ -147,23 +178,9 @@ def main():
     pipe = rs.pipeline(rsContext)
     pipelineProfile = pipe.start()
 
-    isStreamColorImg = True
-    isStreamInfraredImg = True
-    isStreamDepthImg = True
-    isStreamPointCloud = True
-
     # Declare a point cloud object
     pc = rs.pointcloud()
-
-    #
-    # def map_to(self, mapped):  # real signature unknown; restored from __doc__
-    #     """
-    #     map_to(self: pyrealsense2.pyrealsense2.pointcloud, mapped: pyrealsense2.pyrealsense2.frame) -> None
-    #
-    #     Map the point cloud to the given color frame.
-    #     """
-    #     pass
-
+    depthPostProcessing = DepthPostProcessing()
 
     try:
         #for i in range(0, 300):
@@ -175,7 +192,7 @@ def main():
             # frames.size()
             # frame = frames.as_frame()
 
-            if isStreamColorImg:
+            if config.isStreamColorImg:
                 videoFrameCounter += 1
                 videoFrame = frames.get_color_frame()
 
@@ -184,7 +201,7 @@ def main():
                         PlotVideoFrame(videoFrame)
                     # WriteVideoFrame(videoFrame = videoFrame, dstFolder = dstFolder, fileIndex= videoFrameCounter)
 
-            if isStreamInfraredImg:
+            if config.isStreamInfraredImg:
                 frame = frames.get_infrared_frame()
                 if CheckFrameValidity(frame):
                     depth_data = frame.get_data()
@@ -195,14 +212,15 @@ def main():
                     cv2.namedWindow("Infrared Image", cv2.WINDOW_AUTOSIZE)
                     cv2.waitKey(30)
 
-            if isStreamDepthImg:
+            if config.isStreamDepthImg:
                 depthFrame = frames.get_depth_frame()
                 if CheckFrameValidity(depthFrame):
                     PlotDepthFrame(depthFrame)
                     # Plot the depth map as a point cloud
                     # PlotPointCloud(pc, depthFrame, videoFrame)
 
-                    depthFrameFiltered = ApplyFiltersOnDepthFrame(depthFrame)
+                    processedDepthFrame = depthPostProcessing.ApplyPostFiltering(depthFrame)
+                    PlotDepthFrame(processedDepthFrame)
                     PlotDepthFrame(depthFrame)
 
         # print(f.profile)
